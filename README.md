@@ -11,62 +11,16 @@ and time from constantly rewriting code blocks and functions.
 A bit of the min.js functions
 -------------------------
 
-* _$.inArray
-* _$.getRect
-* _$.setJSON
-* _$.getJSON
-* _$.ajax
-* _$.cssSupport
-* _$.random
+* `_$.inArray`
+* `_$.getRect`
+* `_$.setJSON`
+* `_$.getJSON`
+* `_$.ajax`
+* `_$.cssSupport`
+* `_$.random`
 
 Math is hard, where's our Math Functions?
 -------------------------------
 
 We understand some JavaScript developers have a hard time remembering the Math object, we created some small functions to assist in these. Just like the _$.random(x) will genenerate a random Number
 based on x.
-
-More Read Me Information!
-------------------------
-
-  
-_$ = constructor
-
-_$.inArray(property,array) = test if property is in listed Array
-
-_$.setJSON(json) = Sets JSON to stringify
-
-_$.getJSON(var)= Parses string to JSON
-
-_$.data(prop) = create new data for all sorts of elements
-
-_$.getRect(element) = gets left right top bottom width and height of an element
-
-_$.ajax = creates an ajax request
-
-_$.cssSupport(prop) = checks if browser allows css support for the property
-
-_$.random()
-
-addClass
-
-removeClass
-
-hasClass
-
-show
-
-hide
-
-create
-
-attr
-
-hasAttr
-
-removeAttr
-
-style
-
-getStyle
-
-removeStyle
