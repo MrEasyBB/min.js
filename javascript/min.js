@@ -13,6 +13,7 @@ Add any small functions, take out any that aren't needed and place in minUI
         pseudo = /\[contains:\'(.+)\'\]|\[:even\]|\[:odd\]|\[:first\]|\[:last\]|\[nth-child\((.+)\)\]/g,
         getWord = /("|')(.*?)("|')/,
         htmlContext = /^<(\w+)\s*\/?>(?:<\/\1>|)$/,
+        camelCase = /-([a-z])/g;
         testWind = /iframe|object|embed/i,
         JSON = JSON || {},
         doc = document,
@@ -23,27 +24,10 @@ Add any small functions, take out any that aren't needed and place in minUI
         newData = {},
         browser = navigator.userAgent.split(" "),
         //props is for easy access to attribute names, push to the object for memory frames.
-        props = {
-            "class": "className"
+        returnCamel = function(prop){
+           return camelCase.replace(camelCase,function(e){ return e[1].toUpperCase();
         },
         timers = [];
-    //pseudo clean function
-    function pseudos(x, p, r) {
-        if (p == ":even") {
-
-        } else if (p == ":odd") {
-
-        } else if (p.indexOf('contains') !== -1) {
-
-        } else if (p == ":first") {
-
-        } else if (p == ":last") {
-
-        } else if (p.indexOf('nth-child') !== -1) {
-
-        }
-
-    }
 
     //POLYFILLS!
     if (!doc.getElementsByClassName) {
